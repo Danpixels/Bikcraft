@@ -9,3 +9,6 @@
 
 /* Utilitários */
 @import url(./utilidades/componentes.css);
+
+/* Bicicletas */
+@import url(./bicicletas/bicicletasLista.css);
