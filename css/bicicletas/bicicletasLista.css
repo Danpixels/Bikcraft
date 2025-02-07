@@ -4,11 +4,6 @@
 }
 
 .bicicletasLista h2 {
-  max-width: 1200px;
-  box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0px auto;
   padding-bottom: 40px;
 }
 
@@ -17,6 +12,12 @@
   margin: 0px auto;
   display: flex;
   gap: 40px;
+  overflow-x: auto;
+  padding: 20px 20px;
+}
+
+.bicicletasLista li {
+  min-width: 280px;
 }
 
 .bicicletasLista a {
@@ -45,4 +46,19 @@
   height: 8px;
   margin-right: 8px;
   position: relative;
+  transition: width 0.3s;
+}
+
+.bicicletasLista a:hover h3::before {
+  width: 24px;
+}
+
+@media (max-width: 800px) {
+  .bicicletasLista {
+    padding-bottom: 60px;
+  }
+
+  .bicicletasLista ul {
+    gap: 20px
+  }
 }
