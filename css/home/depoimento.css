@@ -1,0 +1,9 @@
+.depoimentos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--corP1);
+}
+
+.depoimentos img {
+  border-radius: 0px;
+}
