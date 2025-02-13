@@ -48,9 +48,50 @@
   background: var(--cor9);
 }
 
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;  
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url(../../img/icones/seta.svg);
+  transition: transform .2s;
+}
+
+.botao.seta:hover:after {
+  transform: translateX(6px);
+}
+
 @media (max-width: 600px) {
   .botao {
     padding: 12px 16px;
     font-size: 1rem;
+  }
+}
+
+
+/* titulos internos */
+.tituloBg {
+  padding: 60px 0;
+  background-color: var(--cor11);
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .tituloBg {
+    padding: 40px 0
+  }
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
   }
 }
